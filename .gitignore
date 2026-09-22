@@ -5,3 +5,4 @@ Thumbs.db
 .cursor/
 *.log
 node_modules/
+.local-full/
