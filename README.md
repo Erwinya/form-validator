@@ -4,7 +4,15 @@ Small client-side validation engine with reusable rules and accessible inline er
 
 ## Status
 
-Core `validate` helper and reusable `rules` (`required`, `minLength`, `email`, `matches`) are in place. Demo page and styles will land in follow-up commits.
+Validation rules plus a working signup demo (`index.html` / `js/app.js`) are in place. Styles will land in a follow-up commit.
+
+## Run
+
+```powershell
+python -m http.server 5182
+```
+
+Then open http://localhost:5182
 
 ## Module
 
@@ -20,14 +28,6 @@ const errors = validate(
   }
 );
 ```
-
-## Planned run
-
-```powershell
-python -m http.server 5182
-```
-
-Then open http://localhost:5182
 
 ## License
 
