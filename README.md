@@ -4,7 +4,7 @@ Small client-side validation engine with reusable rules and accessible inline er
 
 ## Status
 
-Validation rules plus a working signup demo (`index.html` / `js/app.js`) are in place. Styles will land in a follow-up commit.
+Validation rules, signup demo, and styles are in place.
 
 ## Run
 
