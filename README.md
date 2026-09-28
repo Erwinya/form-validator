@@ -4,7 +4,7 @@ Small client-side validation engine with reusable rules and accessible inline er
 
 ## Status
 
-Validation rules, signup demo, and styles are in place.
+Ready for use: validation rules, signup demo, styles, and CI.
 
 ## Run
 
