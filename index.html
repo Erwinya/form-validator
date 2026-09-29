@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Client-side form validation demo with reusable rules and accessible inline errors." />
   <title>Form Validator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +38,7 @@
         <p class="error" data-error-for="confirm"></p>
       </div>
       <button type="submit" class="btn">Create account</button>
-      <p id="form-status" class="status" role="status"></p>
+      <p id="form-status" class="status" role="status" aria-live="polite"></p>
     </form>
   </main>
   <script type="module" src="js/app.js"></script>

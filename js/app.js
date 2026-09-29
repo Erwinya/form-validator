@@ -18,7 +18,10 @@ function clearErrors() {
   form.querySelectorAll(".error").forEach((el) => {
     el.textContent = "";
   });
-  form.querySelectorAll("input").forEach((el) => el.classList.remove("invalid"));
+  form.querySelectorAll("input").forEach((el) => {
+    el.classList.remove("invalid");
+    el.removeAttribute("aria-invalid");
+  });
 }
 
 function showErrors(errors) {
@@ -26,7 +29,10 @@ function showErrors(errors) {
   for (const [field, message] of Object.entries(errors)) {
     const input = form.elements.namedItem(field);
     const errorEl = form.querySelector(`[data-error-for="${field}"]`);
-    if (input) input.classList.add("invalid");
+    if (input) {
+      input.classList.add("invalid");
+      input.setAttribute("aria-invalid", "true");
+    }
     if (errorEl) errorEl.textContent = message;
   }
 }
