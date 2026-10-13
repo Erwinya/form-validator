@@ -29,6 +29,16 @@ const errors = validate(
 );
 ```
 
+
+## Built-in rules
+
+| Helper | Purpose |
+|--------|---------|
+| `rules.required(label?)` | Non-empty value |
+| `rules.minLength(n, label?)` | Minimum string length |
+| `rules.email` | Basic email shape check |
+| `rules.matches(otherField, label?)` | Must equal another field |
+
 ## License
 
 MIT
