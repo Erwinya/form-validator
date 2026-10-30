@@ -6,6 +6,11 @@ Small client-side validation engine with reusable rules and accessible inline er
 
 Complete: validation rules, accessible signup demo, styles, and CI.
 
+
+## Screenshot
+
+![Form Validator signup demo](docs/demo.png)
+
 ## Run
 
 ```powershell
