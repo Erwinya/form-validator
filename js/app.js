@@ -4,9 +4,17 @@ const form = document.getElementById("signup");
 const status = document.getElementById("form-status");
 
 const schema = {
-  name: [rules.required("Full name"), rules.minLength(2, "Full name")],
+  name: [
+    rules.required("Full name"),
+    rules.minLength(2, "Full name"),
+    rules.maxLength(80, "Full name"),
+  ],
   email: [rules.required("Email"), rules.email],
-  password: [rules.required("Password"), rules.minLength(8, "Password")],
+  password: [
+    rules.required("Password"),
+    rules.minLength(8, "Password"),
+    rules.pattern(/\d/, "Password must include a number."),
+  ],
   confirm: [rules.required("Confirm password"), rules.matches("password", "Passwords")],
 };
 
