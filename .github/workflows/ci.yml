@@ -17,9 +17,12 @@ jobs:
         run: |
           node --check js/validator.js
           node --check js/app.js
+      - name: Unit tests
+        run: node --test test/validator.test.mjs
       - name: Required files
         run: |
           test -f index.html
           test -f css/styles.css
           test -f js/validator.js
           test -f js/app.js
+          test -f test/validator.test.mjs
